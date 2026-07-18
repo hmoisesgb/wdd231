@@ -213,7 +213,7 @@ a.active {
 }
 
 .member-body img {
-    width: 100px;
+    width: auto;
     height: 100px;
     object-fit: contain;
     margin-bottom: 1rem;
