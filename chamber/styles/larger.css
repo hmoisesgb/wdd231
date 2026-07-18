@@ -1,0 +1,60 @@
+@media screen and (min-width: 768px) {
+
+    header {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        grid-column: auto;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: .5rem;
+    }
+
+    nav a {
+        padding: .5rem 1rem;
+        border-radius: .3rem;
+        transition: background .3s;
+    }
+
+    nav a:hover {
+        background: rgba(255,255,255,.2);
+    }
+
+    .directoryMenu {
+        margin-bottom: 3rem;
+    }
+
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #generalInformation {
+        text-align: left;
+    }
+
+    #socialMedia {
+        justify-content: center;
+    }
+
+    #projectInformation {
+        text-align: right;
+    }
+}
