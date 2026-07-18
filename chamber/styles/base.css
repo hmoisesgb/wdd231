@@ -5,7 +5,7 @@
     --background-color: #ffffff;
     --card-background: #ffffff;
     --header-background: var(--primary-color);
-    --footer-background: var(--secondary-color);
+    --footer-background: var(--primary-color);
     --text-color: #222;
     --light-text: #ffffff;
     --border-color: #d8d8d8;
@@ -178,14 +178,10 @@ a.active {
 
 .member-card {
     background: var(--card-background);
-
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-
     overflow: hidden;
-
     box-shadow: 0 3px 10px rgba(0,0,0,.12);
-
     transition: transform .3s ease,
                 box-shadow .3s ease;
 }
@@ -246,50 +242,31 @@ a.active {
     text-decoration: underline;
 }
 
-#members.list .member-card {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    align-items: center;
+.list {
+	display: flex;
+	flex-direction: column;
+}
+.list section > * {
+	margin: 0 1rem;
+    padding: 0.2rem;
 }
 
-#members.list .member-header {
-    border-right: 1px solid var(--border-color);
-    border-bottom: none;
-
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.list section img {
+	display: none;
 }
 
-#members.list .member-body {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-    text-align: center;
-}
-
-#members.list .member-body img {
-    width: 80px;
-    height: 80px;
-
-    margin: 0 1rem 0 0;
+.list section h3 {
+	font-size: 1rem;
 }
 
 footer {
     background: var(--footer-background);
     color: white;
-
     padding: 2rem 1rem;
-
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
     text-align: center;
-
     box-shadow: 0 -2px 8px rgba(0,0,0,.15);
 }
 
@@ -319,7 +296,7 @@ footer p {
     --accent-color: #3b3b3b;
     --border-color: #666;
     --header-background: #184f81;
-    --footer-background: #05596b;
+    --footer-background: #184f81;
 }
 
 .dark-mode a {
