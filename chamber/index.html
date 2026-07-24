@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guatemala City Chamber of Commerce - Home Page</title>
+    <meta name="description" content="Guatemala City Chamber of Commerce - Home Page">
+    <meta name="author" content="Haroldo Moises Gonzalez Benavente">
+    <meta property="og:title" content="Haroldo Moises Gonzalez Benavente - WDD 231 - Guatemala City Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hmoisesgb.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://hmoisesgb.github.io/wdd231/chamber/images/guatemala-city.jpg">
+    <meta property="og:description" content="Discover the Guatemala City Chamber of Commerce.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/get-dates.js" defer></script>
+    <script src="scripts/mode.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Logo Image" loading="lazy">
+            <span>Guatemala City Chamber of Commerce</span>
+        </div>
+        <button id="menu" aria-label="Open Navigation"></button>
+        <nav>
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="mode" aria-label="Toggle dark mode">
+            ◐
+        </button>
+    </header>
+
+    <main class="homeMain">
+        <div class="hero">
+            <picture>
+                <source media="(max-width:400px)" srcset="images/guatemala-city-mobile.webp">
+                <img src="images/guatemala-city-large.webp" alt="Guatemala City" width="1020" height="498" loading="lazy">
+            </picture>
+            <div class="callToAction">
+                <a href="join.html" class="join">Join the Chamber</a>
+            </div>
+        </div>
+        <div class="content">
+            <section class="card" id="events">
+                <h3>Events</h3>
+
+                <article class="event">
+                    <h4>Small Business Networking Breakfast</h4>
+
+                    <p><strong>Date:</strong> July 30, 2026</p>
+
+                    <p>
+                        Meet local entrepreneurs, exchange ideas, and build new
+                        business relationships while enjoying breakfast.
+                    </p>
+
+                    <p><strong>Time:</strong> 8:00 AM to 10:00 AM</p>
+
+                    <p><strong>Location:</strong> Guatemala City Chamber Conference Hall</p>
+                </article>
+            </section>
+            <section class="card" id="weather">
+                <h3>Current Weather</h3>
+                <div class="container">
+                    <p id="currentDate" class="dateContainer">#</p>
+                    <img id="weatherIcon" src="" alt=""> <p><span id="weatherDescription"></span></p>
+                </div>
+                <h3 class="weatherTitle">3-Day Forecast</h3>
+            </section>
+        </div>
+        <div class="membersContainer">
+            <h2 class="spotlights">Member Spotlights</h2>
+            <section class="members" id="member1">
+            </section>
+            <section class="members" id="member2">
+            </section>
+            <section class="members" id="member3">
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div id="generalInformation">
+            <p>Guatemala City Chamber of Commerce</p>
+            <p>Zona 16, Ciudad de Guatemala</p>
+            <p>Guatemala, Guatemala</p>
+            <p>info@guatemalacitycc.org</p>
+            <p>+502 1234-5678</p>
+        </div>
+        <div id="socialMedia">
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter.svg" alt="Twitter (X)">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+        </div>
+        <div id="projectInformation">
+            <p>WDD 231 Class Project</p>
+            <p>Haroldo Moises Gonzalez Benavente</p>
+            <p>&copy; <span id="currentYear"></span> Guatemala City Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
