@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guatemala City Chamber of Commerce - Thank you Page</title>
+    <meta name="description" content="Guatemala City Chamber of Commerce - Thank you - Thank you for joining the Chamber of Commerce">
+    <meta name="author" content="Haroldo Moises Gonzalez Benavente">
+    <meta property="og:title" content="Haroldo Moises Gonzalez Benavente - WDD 231 - Guatemala City Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hmoisesgb.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://hmoisesgb.github.io/wdd231/chamber/images/guatemala-city.jpg">
+    <meta property="og:description" content="Discover the Guatemala City Chamber of Commerce Thank you Page.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/get-dates.js" defer></script>
+    <script src="scripts/mode.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Logo Image" loading="lazy">
+            <span>Guatemala City Chamber of Commerce</span>
+        </div>
+        <button id="menu" aria-label="Open Navigation"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="mode" aria-label="Toggle dark mode">
+            ◐
+        </button>
+    </header>
+
+    <main class="thankyouMain">
+        <h1>Thank You!</h1>
+        <section class="thankyouCard">
+            <h2>Your Application Has Been Received</h2>
+            <p>
+                Thank you for applying to become a member of the Guatemala City
+                Chamber of Commerce. We have received your application and will
+                review it shortly.
+            </p>
+            <div class="submittedInfo">
+                <h3>Application Details</h3>
+                <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+                <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                <p><strong>Mobile Phone:</strong> <span id="displayPhone"></span></p>
+                <p><strong>Business Name:</strong> <span id="displayBusiness"></span></p>
+                <p><strong>Application Submitted:</strong>
+                    <span id="displayTimestamp"></span>
+                </p>
+            </div>
+            <a class="join" href="index.html">
+                Return Home
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div id="generalInformation">
+            <p>Guatemala City Chamber of Commerce</p>
+            <p>Zona 16, Ciudad de Guatemala</p>
+            <p>Guatemala, Guatemala</p>
+            <p>info@guatemalacitycc.org</p>
+            <p>+502 1234-5678</p>
+        </div>
+        <div id="socialMedia">
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter.svg" alt="Twitter (X)">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+        </div>
+        <div id="projectInformation">
+            <p>WDD 231 Class Project</p>
+            <p>Haroldo Moises Gonzalez Benavente</p>
+            <p>&copy; <span id="currentYear"></span> Guatemala City Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

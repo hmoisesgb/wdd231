@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guatemala City Chamber of Commerce - Join Page</title>
+    <meta name="description" content="Guatemala City Chamber of Commerce - Join Page - Join the Chamber of Commerce">
+    <meta name="author" content="Haroldo Moises Gonzalez Benavente">
+    <meta property="og:title" content="Haroldo Moises Gonzalez Benavente - WDD 231 - Guatemala City Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hmoisesgb.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://hmoisesgb.github.io/wdd231/chamber/images/guatemala-city.jpg">
+    <meta property="og:description" content="Discover the Guatemala City Chamber of Commerce Join Page.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/get-dates.js" defer></script>
+    <script src="scripts/mode.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Logo Image" loading="lazy">
+            <span>Guatemala City Chamber of Commerce</span>
+        </div>
+        <button id="menu" aria-label="Open Navigation"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="mode" aria-label="Toggle dark mode">
+            ◐
+        </button>
+    </header>
+
+    <main class="joinMain">
+        <h1>Join the Chamber</h1> 
+        <div class="formContainer">
+            <form method="get" action="thankyou.html" class="form">
+            <fieldset class="information">
+                <legend>User Information</legend>
+                <label>First Name*<input type="text" name="fName" id="firstName" title="Enter your first name" autocomplete="given-name" required></label>
+                <label>Last Name*<input type="text" name="lName" id="lastName" title="Enter your last name" autocomplete="family-name" required></label>
+                <label>Title or Position<input type="text" name="aTitle" id="applicantTitle" title="Enter your title or position" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}"></label>
+                <label>Email Address*<input type="email" name="email" id="email" placeholder="someone@example.com" title="Enter your email" autocomplete="email" required></label>
+                <label>Phone Number*<input type="tel" name="phone" id="phoneNumber" title="Enter your phone number" autocomplete="tel" required></label>
+            </fieldset>
+            <fieldset class="selection">
+                <legend>Membership</legend>
+                <label><input type="radio" name="level" id="NP" value="np" required> NP Membership</label>
+                <label><input type="radio" name="level" id="bronze" value="bronze" required> Bronze Membership</label>
+                <label><input type="radio" name="level" id="silver" value="silver" required> Silver Membership</label>
+                <label><input type="radio" name="level" id="gold" value="gold" required> Gold Membership</label>
+            </fieldset>
+            <fieldset class="information">
+                <legend>Business</legend>
+                <label>Business/Organization Name*<input type="text" name="bName" id="businessName" title="Enter your business name" autocomplete="organization" required></label>
+                <label>Business/Organization Description <textarea name="bDescription" id="businessDescription" title="Enter your business description"></textarea></label>
+            </fieldset>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Join the Chamber" id="submitBtn">
+        </form>
+        </div>
+        <div class="membership">
+            <h2>Membership Levels</h2>
+
+            <section class="benefits">
+                <h3>NP Membership</h3>
+                <p>For nonprofit organizations</p>
+                <button type="button" data-modal="npModal">
+                    Learn More
+                </button>
+            </section>
+
+            <section class="benefits">
+                <h3>Bronze Membership</h3>
+                <p>Perfect for small businesses</p>
+                <button type="button" data-modal="bronzeModal">
+                    Learn More
+                </button>
+            </section>
+
+            <section class="benefits">
+                <h3>Silver Membership</h3>
+                <p>Grow your business with extra benefits</p>
+                <button type="button" data-modal="silverModal">
+                    Learn More
+                </button>
+            </section>
+
+            <section class="benefits">
+                <h3>Gold Membership</h3>
+                <p>Our premium membership</p>
+                <button type="button" data-modal="goldModal">
+                    Learn More
+                </button>
+            </section>
+        </div>
+        <dialog id="npModal">
+            <h2>NP Membership</h2>
+            <p><strong>Annual Cost:</strong> Free</p>
+            <ul>
+                <li>Networking opportunities</li>
+                <li>Weekly community events</li>
+                <li>Business resources</li>
+            </ul>
+            <button type="button" class="closeModal">Close</button>
+        </dialog>
+        <dialog id="bronzeModal">
+            <h2>Bronze Membership</h2>
+            <p><strong>Annual Cost:</strong> $150</p>
+            <ul>
+                <li>Everything included in NP</li>
+                <li>Monthly breakfast meetings</li>
+                <li>Special Chamber events</li>
+            </ul>
+            <button type="button" class="closeModal">Close</button>
+        </dialog>
+        <dialog id="silverModal">
+            <h2>Silver Membership</h2>
+            <p><strong>Annual Cost:</strong> $300</p>
+            <ul>
+                <li>Everything included in Bronze</li>
+                <li>Professional training</li>
+                <li>Business spotlight opportunities</li>
+            </ul>
+            <button type="button" class="closeModal">Close</button>
+        </dialog>
+        <dialog id="goldModal">
+            <h2>Gold Membership</h2>
+            <p><strong>Annual Cost:</strong> $500</p>
+            <ul>
+                <li>Everything included in Silver</li>
+                <li>Free premium events</li>
+                <li>Priority advertising</li>
+                <li>Exclusive networking opportunities</li>
+            </ul>
+            <button type="button" class="closeModal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div id="generalInformation">
+            <p>Guatemala City Chamber of Commerce</p>
+            <p>Zona 16, Ciudad de Guatemala</p>
+            <p>Guatemala, Guatemala</p>
+            <p>info@guatemalacitycc.org</p>
+            <p>+502 1234-5678</p>
+        </div>
+        <div id="socialMedia">
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter.svg" alt="Twitter (X)">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+        </div>
+        <div id="projectInformation">
+            <p>WDD 231 Class Project</p>
+            <p>Haroldo Moises Gonzalez Benavente</p>
+            <p>&copy; <span id="currentYear"></span> Guatemala City Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

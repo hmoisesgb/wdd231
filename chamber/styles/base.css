@@ -479,3 +479,296 @@ footer p {
 .event strong {
     color: var(--primary-color);
 }
+
+/* ---------- Join Page ---------- */
+
+.joinMain h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.formContainer {
+    margin-bottom: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    background: var(--card-background);
+}
+
+legend {
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 0 .5rem;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.form input,
+.form textarea,
+.form select {
+    padding: .75rem;
+    border: 1px solid var(--border-color);
+    border-radius: .35rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.selection label {
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    font-weight: normal;
+}
+
+.selection input[type="radio"] {
+    width: auto;
+}
+
+#submitBtn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#submitBtn:hover {
+    background: var(--secondary-color);
+}
+
+.membership {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.membership h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.benefits {
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlide .8s ease forwards;
+}
+
+.benefits:nth-child(2){
+    animation-delay:.2s;
+}
+
+.benefits:nth-child(3){
+    animation-delay:.4s;
+}
+
+.benefits:nth-child(4){
+    animation-delay:.6s;
+}
+
+.benefits:nth-child(5){
+    animation-delay:.8s;
+}
+
+.benefits h3{
+    color:var(--primary-color);
+    margin-bottom:.75rem;
+}
+
+.benefits p{
+    margin-bottom:1rem;
+    color:#666;
+}
+
+.benefits button{
+    background:var(--secondary-color);
+    color:white;
+    border:none;
+    padding:.7rem 1.25rem;
+    border-radius:.4rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.benefits button:hover{
+    background:var(--primary-color);
+}
+
+@keyframes fadeSlide{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+dialog{
+    border:none;
+    border-radius:.75rem;
+    max-width:450px;
+    width:90%;
+    padding:2rem;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+dialog::backdrop{
+    background:rgba(0,0,0,.55);
+}
+
+dialog h2{
+    color:var(--primary-color);
+    margin-bottom:1rem;
+}
+
+dialog ul{
+    padding-left:1.25rem;
+    margin:1rem 0;
+}
+
+.closeModal{
+    display:block;
+    margin:1.5rem auto 0;
+    padding:.75rem 1.5rem;
+
+    border:none;
+    border-radius:.4rem;
+
+    background:var(--primary-color);
+    color:white;
+    cursor:pointer;
+}
+
+.closeModal:hover{
+    background:var(--secondary-color);
+}
+
+.dark-mode fieldset{
+    background:var(--card-background);
+}
+
+.dark-mode input,
+.dark-mode textarea{
+    background:#2d2d2d;
+    color:white;
+    border-color:#666;
+}
+
+.dark-mode dialog{
+    background:#2d2d2d;
+    color:white;
+}
+
+.dark-mode .benefits h3,
+.dark-mode legend{
+    color:#9fd8ff;
+}
+
+/* ---------- Thank You Page ---------- */
+
+.thankyouMain {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.thankyouMain h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.thankyouCard {
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+
+.thankyouCard h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.thankyouCard > p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.submittedInfo {
+    margin: 2rem 0;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.submittedInfo h3 {
+    background: var(--primary-color);
+    color: white;
+    padding: .9rem;
+    text-align: center;
+}
+
+.submittedInfo p {
+    padding: .9rem 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.submittedInfo p:nth-child(even) {
+    background: var(--accent-color);
+}
+
+.submittedInfo span {
+    font-weight: normal;
+    color: var(--secondary-color);
+}
+
+.thankyouCard .join {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto 0;
+}
+
+.dark-mode .submittedInfo h3 {
+    color: white;
+}
+
+.dark-mode .submittedInfo span {
+    color: #9fd8ff;
+}
