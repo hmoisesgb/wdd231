@@ -140,3 +140,101 @@
         padding: 3rem;
     }
 }
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    /* Discover Page - Medium */
+
+    .discoverCards {
+        grid-template-columns: 1fr;
+    }
+
+    .discoverCard {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        grid-template-areas:
+            "title title"
+            "image description"
+            "image address"
+            "button button";
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .discoverCard h2 {
+        grid-area: title;
+    }
+
+    .discoverCard figure {
+        grid-area: image;
+        margin: 0;
+    }
+
+    .discoverCard p {
+        grid-area: description;
+        margin: 0;
+    }
+
+    .discoverCard address {
+        grid-area: address;
+        margin: 0;
+    }
+
+    .discoverCard button {
+        grid-area: button;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    /* Discover Page - Large */
+
+    .discoverCards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .discoverCard {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "title title"
+            "image description"
+            "image address"
+            "button button";
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .discoverCard h2 {
+        grid-area: title;
+    }
+
+    .discoverCard figure {
+        grid-area: image;
+        margin: 0;
+    }
+
+    .discoverCard p {
+        grid-area: description;
+        margin: 0;
+    }
+
+    .discoverCard address {
+        grid-area: address;
+        margin: 0;
+    }
+
+    .discoverCard button {
+        grid-area: button;
+    }
+
+    .discoverCard img {
+        transition: transform .3s ease, filter .3s ease;
+    }
+
+    .discoverCard img:hover {
+        transform: scale(1.03);
+        filter: brightness(1.1);
+    }
+}

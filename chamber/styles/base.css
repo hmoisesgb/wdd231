@@ -772,3 +772,88 @@ dialog ul{
 .dark-mode .submittedInfo span {
     color: #9fd8ff;
 }
+
+/* ---------- Discover Page ---------- */
+
+.discoverMain h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.visitorMessage {
+    background: var(--accent-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.discoverCards {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.discoverCard {
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .12);
+}
+
+.discoverCard h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.discoverCard figure {
+    margin: 0 0 1rem;
+}
+
+.discoverCard img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: .35rem;
+}
+
+.discoverCard address {
+    font-style: normal;
+    margin-bottom: .75rem;
+}
+
+.discoverCard p {
+    margin-bottom: 1rem;
+}
+
+.discoverCard button {
+    width: 100%;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: .4rem;
+    padding: .7rem 1.25rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.discoverCard button:hover {
+    background: var(--primary-color);
+}
+
+.dark-mode .discoverMain h1,
+.dark-mode .discoverCard h2 {
+    color: #9fd8ff;
+}
+
+.dark-mode .joinMain h1,
+.dark-mode .joinMain h2 {
+    color: #9fd8ff;
+}
+
+.dark-mode .benefits p {
+    color: white;
+}
