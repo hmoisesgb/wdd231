@@ -1,0 +1,62 @@
+[
+    {
+        "id": "Ezreal",
+        "rank": 1
+    },
+    {
+        "id": "Caitlyn",
+        "rank": 2
+    },
+    {
+        "id": "MissFortune",
+        "rank": 3
+    },
+    {
+        "id": "Lucian",
+        "rank": 4
+    },
+    {
+        "id": "Kaisa",
+        "rank": 5
+    },
+    {
+        "id": "Ashe",
+        "rank": 6
+    },
+    {
+        "id": "Jhin",
+        "rank": 7
+    },
+    {
+        "id": "Xayah",
+        "rank": 8
+    },
+    {
+        "id": "Vayne",
+        "rank": 9
+    },
+    {
+        "id": "Jinx",
+        "rank": 10
+    },
+    {
+        "id": "Tristana",
+        "rank": 11
+    },
+    {
+        "id": "Aphelios",
+        "rank": 12
+    },
+    {
+        "id": "Varus",
+        "rank": 13
+    },
+    {
+        "id": "Zeri",
+        "rank": 14
+    },
+    {
+        "id": "Sivir",
+        "rank": 15
+    }
+]

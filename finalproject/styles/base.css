@@ -1,0 +1,685 @@
+:root {
+    --primary-color: #0a1428;
+    --accent-color: #c89b3c;
+    --background-color: #f5f5f5;
+    --card-color: #ffffff;
+    --text-color: #222222;
+    --light-text: #ffffff;
+    --muted-text: #5f6368;
+    --border-color: #d8d8d8;
+
+    --heading-font: "Cinzel", serif;
+    --body-font: "Roboto", sans-serif;
+
+    --border-radius: 0.5rem;
+    --max-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.15rem;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    padding: 2rem 1rem;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.eyebrow {
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+}
+
+.header-container {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: var(--heading-font);
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu-button {
+    border: 1px solid var(--accent-color);
+    background: transparent;
+    color: var(--light-text);
+    font-size: 1.5rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.navigation a.active,
+.navigation a[aria-current="page"] {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.button,
+button {
+    font-family: var(--body-font);
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover,
+.button:focus {
+    filter: brightness(1.08);
+}
+.button:focus-visible,
+.menu-button:focus-visible,
+.navigation a:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+.journey-card,
+.playstyle-card,
+.champion-card,
+.submission-details {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+.journey-grid,
+.playstyle-grid,
+.champion-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+}
+
+.footer-container {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.footer-container p {
+    margin: 0.25rem 0;
+}
+
+
+/* Home Page */
+
+.hero {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+.hero h1 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+}
+
+.introduction {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.introduction h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.introduction p {
+    margin-bottom: 1rem;
+}
+
+.journey {
+    max-width: var(--max-width);
+    margin-inline: auto;
+}
+
+.journey > h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.journey-card {
+    text-align: center;
+}
+
+.journey-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.journey-card h3 {
+    color: var(--accent-color);
+    margin-top: 0;
+}
+
+.journey-card p {
+    margin-bottom: 0;
+}
+
+.champion-preview {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+}
+
+.champion-preview h2 {
+    color: var(--accent-color);
+}
+
+.champion-preview .button {
+    margin-top: 1rem;
+}
+
+/* Champions Page */
+
+.champions-intro {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+}
+
+.champions-intro h1 {
+    color: var(--accent-color);
+}
+
+.champions-section {
+    max-width: var(--max-width);
+    margin-inline: auto;
+}
+
+.champions-section > h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.champion-card {
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.champion-card > img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.champion-card-content {
+    padding: 1rem;
+}
+
+.champion-rank {
+    margin-top: 0;
+    margin-bottom: 0.35rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.champion-card h3 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.champion-title {
+    margin-top: 0.25rem;
+    color: var(--muted-text);
+    font-style: italic;
+}
+
+.champion-card-content p {
+    margin-block: 0.5rem;
+}
+
+.favorite-button,
+.details-button {
+    width: 100%;
+    margin-top: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.favorite-button {
+    background-color: var(--card-color);
+    color: var(--primary-color);
+    border: 2px solid var(--accent-color);
+}
+
+.favorite-button[aria-pressed="true"] {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.details-button {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border: 2px solid var(--primary-color);
+}
+
+.favorite-button:hover,
+.favorite-button:focus-visible,
+.details-button:hover,
+.details-button:focus-visible {
+    filter: brightness(1.08);
+}
+
+.favorite-button:focus-visible,
+.details-button:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.error-message {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #b00020;
+    border-radius: var(--border-radius);
+    background-color: #fff5f5;
+    color: #7a0014;
+    text-align: center;
+}
+
+#champion-modal {
+    width: min(92%, 700px);
+    max-height: 85vh;
+    padding: 0;
+    border: none;
+    border-radius: var(--border-radius);
+    overflow-y: auto;
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
+#champion-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-close {
+    position: sticky;
+    top: 0.5rem;
+    float: right;
+    margin: 0.5rem;
+    z-index: 1;
+
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--primary-color);
+    color: var(--light-text);
+
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#modal-content {
+    padding: 1rem;
+    clear: both;
+}
+
+.modal-champion-header {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.modal-champion-header > img {
+    width: 100%;
+    max-width: 300px;
+    margin-inline: auto;
+    border-radius: var(--border-radius);
+}
+
+.modal-champion-header h2 {
+    margin-bottom: 0.25rem;
+    color: var(--primary-color);
+}
+
+.modal-champion-header p {
+    margin-top: 0;
+    color: var(--muted-text);
+    font-style: italic;
+}
+
+.modal-lore,
+.modal-passive,
+.modal-abilities {
+    margin-top: 1.5rem;
+}
+
+.modal-lore h3,
+.modal-passive h3,
+.modal-abilities h3 {
+    color: var(--primary-color);
+}
+
+.modal-passive > img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 0.75rem;
+}
+
+.modal-abilities ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ability {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 0.75rem;
+    align-items: start;
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ability:last-child {
+    border-bottom: none;
+}
+
+.ability img {
+    width: 64px;
+    height: 64px;
+}
+
+.ability h3 {
+    margin-top: 0;
+    margin-bottom: 0.35rem;
+}
+
+.ability p {
+    margin: 0;
+}
+
+/* Experience Page */
+
+.experience-intro {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+}
+
+.experience-intro h1 {
+    color: var(--accent-color);
+}
+
+.competitive-journey,
+.adc-experience,
+.playstyle,
+.experience-form-section {
+    max-width: 900px;
+    margin-inline: auto;
+}
+
+.competitive-journey h2,
+.adc-experience h2,
+.playstyle h2,
+.experience-form-section h2 {
+    color: var(--primary-color);
+}
+
+.competitive-journey p,
+.adc-experience p {
+    margin-bottom: 1rem;
+}
+
+.playstyle > h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.playstyle-card {
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.playstyle-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.playstyle-card p {
+    margin-bottom: 0;
+}
+
+.experience-form-section {
+    padding-bottom: 3rem;
+}
+
+.experience-form {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    background-color: var(--card-color);
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.experience-form label {
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.experience-form input,
+.experience-form select,
+.experience-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font: inherit;
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
+.experience-form textarea {
+    resize: vertical;
+    min-height: 8rem;
+}
+
+.experience-form input:focus,
+.experience-form select:focus,
+.experience-form textarea:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+    border-color: var(--accent-color);
+}
+
+.experience-form button {
+    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.experience-form button:hover,
+.experience-form button:focus-visible {
+    filter: brightness(1.08);
+}
+
+.experience-form button:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.experience-form-section .section-heading {
+    margin-bottom: 1rem;
+}
+
+/* Form Action Page */
+
+.submission-section {
+    max-width: 700px;
+    margin-inline: auto;
+    min-height: 70vh;
+}
+
+.submission-section .section-heading h1 {
+    color: var(--primary-color);
+}
+
+.submission-details {
+    margin-block: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.submission-details h2 {
+    margin-top: 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+.submission-details p {
+    margin: 0;
+    padding-block: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+    overflow-wrap: anywhere;
+}
+
+.submission-details p:last-child {
+    border-bottom: none;
+}
+
+.submission-details strong {
+    color: var(--primary-color);
+}
+
+.submission-section > .button {
+    display: block;
+    width: 100%;
+}
+
+.form-eyebrow {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}

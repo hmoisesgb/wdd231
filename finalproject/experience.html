@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Experience | My Experience</title>
+    <meta name="description" content="Read about my League of Legends journey, competitive experience, favorite role, and personal playstyle.">
+    <meta name="author" content="Haroldo Moises Gonzalez Benavente">
+    <meta property="og:title" content="League Experience | My Experience">
+    <meta property="og:description" content="Learn about my League of Legends journey, competitive progress, favorite role, and personal experience with the game.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hmoisesgb.github.io/wdd231/finalproject/experience.html">
+    <meta property="og:image" content="https://hmoisesgb.github.io/wdd231/finalproject/images/league-experience.jpg">
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/main.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                League Experience
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation"> ☰ </button>
+            <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="champions.html">Champions</a>
+                <a href="experience.html" class="active" aria-current="page">My Experience</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <section class="experience-intro">
+            <div class="section-heading">
+                <p class="eyebrow">MY JOURNEY THROUGH THE RIFT</p>
+                <h1>My League Experience</h1>
+                <p>
+                    League of Legends has been a major part of my gaming
+                    experience. Over time, I have improved my mechanics,
+                    learned different roles, and developed a playstyle
+                    focused on ranged champions and teamfight positioning.
+                </p>
+            </div>
+        </section>
+        <section class="competitive-journey">
+            <h2>My Competitive Journey</h2>
+            <p>
+                One of my biggest accomplishments in League of Legends was
+                reaching Master rank during Season 13. Reaching that rank
+                required consistency, improvement, and a better understanding
+                of decision-making throughout each match.
+            </p>
+            <p>
+                Ranked play helped me improve not only mechanically, but also
+                in areas such as positioning, map awareness, team coordination,
+                and adapting to different situations during a game.
+            </p>
+        </section>
+        <section class="adc-experience">
+            <h2>Why I Enjoy Playing ADC</h2>
+            <p>
+                ADC is the role I enjoy the most because I like playing ranged
+                champions and contributing a large amount of damage during
+                fights. The role also requires careful positioning because
+                marksmen are usually vulnerable and can be eliminated quickly
+                if they are caught out of position.
+            </p>
+            <p>
+                I especially enjoy the decision-making involved in teamfights.
+                A good ADC has to balance dealing damage with staying safe,
+                choosing the correct target, and knowing when to move forward
+                or retreat.
+            </p>
+        </section>
+        <section class="playstyle">
+            <h2>My Playstyle</h2>
+            <div class="playstyle-grid">
+                <article class="playstyle-card">
+                    <h3>Positioning</h3>
+                    <p>
+                        I focus on maintaining a safe position while still
+                        dealing consistent damage during fights.
+                    </p>
+                </article>
+                <article class="playstyle-card">
+                    <h3>Ranged Champions</h3>
+                    <p>
+                        I enjoy champions that allow me to attack from range
+                        and reward good spacing and movement.
+                    </p>
+                </article>
+                <article class="playstyle-card">
+                    <h3>Teamfighting</h3>
+                    <p>
+                        Large teamfights are one of my favorite parts of the
+                        game because they require awareness, timing, and
+                        quick decision-making.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="experience-form-section">
+            <div class="section-heading">
+                <h2>Share Your League Experience</h2>
+                <p>
+                    Tell me about your own experience with League of Legends,
+                    including your favorite champion or role.
+                </p>
+            </div>
+            <form action="form-action.html" method="get" class="experience-form">
+                <label for="name"> Name </label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+                <label for="email"> Email </label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                <label for="favorite-champion"> Favorite Champion </label>
+                <input type="text" id="favorite-champion" name="favorite-champion" required>
+                <label for="favorite-role"> Favorite Role </label>
+                <select id="favorite-role" name="favorite-role" required>
+                    <option value="" selected disabled>
+                        Select a role
+                    </option>
+                    <option value="top">Top</option>
+                    <option value="jungle">Jungle</option>
+                    <option value="mid">Mid</option>
+                    <option value="adc">ADC</option>
+                    <option value="support">Support</option>
+                </select>
+                <label for="message">
+                    Tell Me About Your Experience
+                </label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">
+                    Share Experience
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>
+                &copy; 2026 League Experience |
+                Haroldo Moises Gonzalez Benavente
+            </p>
+            <p>
+                WDD231 Final Project
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
