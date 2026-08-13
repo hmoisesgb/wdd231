@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">League Experience crest</title>
+  <desc id="desc">A flat gold winged crest with a blue diamond on a dark navy rounded square.</desc>
+
+  <rect width="512" height="512" rx="96" fill="#0A1428"/>
+
+  <!-- central spear -->
+  <path fill="#C89B3C" d="M256 52 304 157 276 146 256 113 236 146 208 157z"/>
+  <path fill="#C89B3C" d="M244 158h24l18 83-16 36v133l-14 50-14-50V277l-16-36z"/>
+
+  <!-- left wing -->
+  <path fill="#C89B3C" d="M224 184
+    C177 169 133 135 102 91
+    C105 151 132 202 185 232
+    C149 224 115 207 82 178
+    C94 232 132 270 186 286
+    C153 285 123 276 94 258
+    C112 304 151 331 203 333
+    L235 303 218 261 236 230z"/>
+
+  <!-- right wing -->
+  <path fill="#C89B3C" d="M288 184
+    C335 169 379 135 410 91
+    C407 151 380 202 327 232
+    C363 224 397 207 430 178
+    C418 232 380 270 326 286
+    C359 285 389 276 418 258
+    C400 304 361 331 309 333
+    L277 303 294 261 276 230z"/>
+
+  <!-- inner navy cuts -->
+  <path fill="#0A1428" d="M213 218c-31-12-58-30-81-55 16 30 40 53 72 68z"/>
+  <path fill="#0A1428" d="M203 262c-27-6-51-16-72-31 18 23 40 39 67 48z"/>
+  <path fill="#0A1428" d="M299 218c31-12 58-30 81-55-16 30-40 53-72 68z"/>
+  <path fill="#0A1428" d="M309 262c27-6 51-16 72-31-18 23-40 39-67 48z"/>
+
+  <!-- center frame -->
+  <path fill="#C89B3C" d="M256 184 319 256 256 328 193 256z"/>
+  <path fill="#0A1428" d="M256 206 300 256 256 306 212 256z"/>
+  <path fill="#2AA9E0" d="M256 226 282 256 256 286 230 256z"/>
+  <path fill="#73D5FF" d="M256 226 256 286 230 256z"/>
+</svg>
